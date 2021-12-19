@@ -8,22 +8,22 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
-// Nav hamburgerburger selections
-const burger = document.querySelector('#burger-menu');
-const ul = document.querySelector('nav ul');
-const nav = document.querySelector('nav');
 
-burger.addEventListener('click', ()=>{
-    ul.classList.toggle('show');
-})
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-// Close hamburger menu when a link is clicked
+hamburger.addEventListener("click", mobileMenu);
 
-// Select nav links
-const navLink = document.querySelectorAll('.nav-link');
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}

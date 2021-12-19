@@ -33,44 +33,66 @@
   <body>
     <div>
     <!-- Navbar -->
-    <nav>
-        <img src="assets/images/mykey.png" alt="" width="50">
-        <h1>MICHAEL OTIENO</h1>
-        <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
-    </nav>
-
+    <header class="header">
+      <nav class="navbar">
+          <a href="#" class="nav-logo">MICHAEL OTIENO</a>
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#skills" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav><hr>
+</header>
+   
     <!-- Hero Section -->
-    <section class="hero" id="about">
+    <section class="hero" id="about" style="margin: 10px;">
         <!-- side photo -->
     </section>
 
     <!-- More about -->
 
-    <section class="more-about" style="font-size: large;">
-        <p>
-          Hello, I am <em style="font-size: 20px;font-weight:700px;">MICHAEL OTIENO</em>, a software developer
-          I can help you solve a problem, build a product or grow an existing project.
+    <section class="more-about parent" style="margin-top: 10px;">
+        <div class="child">
+          <p>
+            <em style="font-size: 20px;font-weight:700px;"> Hello, I am <u>MICHAEL OTIENO</u>, a software developer</em>
+          </p>
+          <a href="#contact" class="buttonLink">Contact</a>
+          
+        </div>
+        <div class="child">
+          <img src="/assets/images/mykey.png" alt="" width="50%">
+        </div>
+       
+    </section>
+
+    <!-- more about me -->
+    <section style="padding-left: 150px; line-height: 40px; font-size: medium;">
+      <h2 style="text-align: center; margin-top: 20px;">About Me</h2>
+
+      <p>
+        I can help you solve a problem, build a product or grow an existing project.
         </p>
         <p>
           I am a positive, hardworking team player, who loves learning and implementing new technologies.
-        </p>
-        
-        <p>
-          Currently, am a proud graduate from Moringa school where I pursued a course in software development.This enabled me to coperate on some projects.
         </p>
 
         <p>
           I've always been passionate about technology hence I chose to pursue software development.
         </p>
-       
     </section>
 
     <!-- Skills section -->
@@ -112,9 +134,9 @@
               <img src="/assets/images/django.png" alt="" width="180">
             </span>
 
-            <span class="ico icon-car">
+            <!-- <span class="ico icon-car">
               <img src="/assets/images/flask.png" alt="" width="180">
-            </span>
+            </span> -->
 
             <span class="ico icon-car">
               <img src="/assets/images/mysql.png" alt="" width="180">
