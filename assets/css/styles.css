@@ -32,13 +32,7 @@ html{
 ul{
     list-style-type: none;
 }
-a{
-    text-decoration: none;
-    color: var(--primary-color);
-}
-a:hover{
-    color: var(--secondary-color);
-}
+
 body{
     font-family: var(--font-family);
     
@@ -87,7 +81,7 @@ body{
 }
 
 .nav-link:hover{
-  color: #482ff7;
+  color: #ff7235;
 }
 
 .nav-logo {
@@ -96,36 +90,6 @@ body{
   color: #482ff7;
 }
 
-
-
-/* endnavbar */
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:2.5rem;
-    max-width: 68.75rem;
-    margin: auto;
-   
-}
-.hero img{
-    height: 37.5rem;
-    width: 37.5rem;
-}
-.bio{
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-}
-
-.bio h1{
-    margin-bottom: var(--bottom-margin);
-}
-.bio p{
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
-}
 .more-about{
     background-color: var(--bg-color);
     padding: 2rem 6rem;
@@ -149,32 +113,38 @@ body{
     text-align: center;
     margin-top: 2.5rem;
 }
-/*
+
 .skill-header{
     margin-bottom: 1rem;
 }
 .skills-wrapper img{
     padding: 1.25rem;
-} */
-.icon{
-    width: 11.875rem;
-    height: 11.25rem;
 }
-.icon-card{
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
-    padding: 20px;
-    margin: 10px;
+
+.fancy{
+  font-size: 20px;
+  font-weight:800px;
 }
+
+
+.aboutMeSection{
+  padding-left: 150px;
+  line-height: 40px;
+  font-size: medium;
+}
+.aboutMeSection h2{
+  text-align: center;
+  margin-top: 20px;
+}
+
 .projects{
     background-color: var(--bg-color);
     padding: 32px 0;
     margin-top: 2rem;
 }
 .project-pic {
-    width: 65%;
-    height: 60%;
+    width: 100%;
+    height: 50%;
   }
 
 
@@ -219,56 +189,6 @@ body{
   .contact h2 {
     text-align: center;
     margin-bottom: var(--bottom-margin-2);
-  }
-  
-  .contact-form-container {
-    max-width: 40.75rem;
-    margin: 0 auto;
-    padding: 0.938rem;
-    border-radius: 5px;
-    /* box-shadow: 0 3px 10px var(--secondary-shadow); */
-  }
-
-  .contact-form-container label {
-    line-height: 2.7em;
-    font-weight: var(--bold-font);
-    color: var(--primary-color);
-  }
-  
-  .contact-form-container textarea {
-    min-height: 6.25rem;
-    font-size: 14px;
-  }
-  
-  .contact-form-container .input-field {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-    border: 2px outset var(--primary-color);
-    font-size: 0.875rem;
-    outline: none;
-  }
-  .input-field::placeholder {
-    padding: 0.5rem;
-    color: var(--primary-color);
-  }
-  .submit-btn {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #fff;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: var(--bold-font);
-    transition: var(--transition);
-  }
-  .submit-btn:hover {
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    cursor: pointer;
   }
 
   .socials {
@@ -318,13 +238,10 @@ body{
   span{
     opacity: 0;
     transition: all 0.4s ease;
-    /* transform: translateY(50px); */
-    /* display: inline-block; */
   }
 
   span.fade{
     opacity: 1;
-    /* transform: translateY(0px); */
   }
 
 
@@ -403,24 +320,7 @@ body{
         max-width: 23.75rem;
       }
   }
-  @media screen and (max-width: 768px) {
-    .hero img {
-      height: 37.5rem;
-      width: 23rem;
-    }
   
-    .bio {
-      width: 18.3rem;
-    }
-  
-    .project-container {
-      width: 17.875rem;
-    }
-  
-    .contact-form-container {
-      max-width: 17.75rem;
-    }
-  } 
 
   @media only screen and (max-width: 768px) {
     .nav-menu {
@@ -428,13 +328,12 @@ body{
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color:white;
+        background-color:rgba(120, 167, 221, 0.05);
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        /* box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05); */
+        
     }
 
     .nav-menu.active {
@@ -448,8 +347,10 @@ body{
     .hamburger {
         display: block;
         cursor: pointer;
+        background-color:rgba(13, 62, 117, 0.05);
     }
-
+   
+    
     .hamburger.active .bar:nth-child(2) {
       opacity: 0;
   }
